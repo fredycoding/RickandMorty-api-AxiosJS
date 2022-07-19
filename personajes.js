@@ -8,20 +8,15 @@ export const cargarPersonajes = async(pagina) => {
 			let personajes = '';
 			datos.forEach(personaje => {
 				personajes += `
-					<div class="pelicula card">
+					<div class="card">
 						<img class="poster" src="${personaje.image}">
 						<h3 class="titulo">${personaje.name}</h3>
                         <h4 class="subtitulo">${personaje.species} - ${personaje.gender}</h4>
-					</div>
-				`;
+					</div>`;
 			});
-
 			document.getElementById('contenedor').innerHTML = personajes;
-
-		} else if(respuesta.status == 404){
-			console.log('La página que busca no existe');
 		} else {
-			console.log('Error y no se que pasa');
+			console.log('Error en el status:' + respuesta.status);
 		}
 
 	} catch(error){
