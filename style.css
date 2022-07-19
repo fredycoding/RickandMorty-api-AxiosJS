@@ -23,11 +23,11 @@ body {
 }
 
 
-.titulo {
+.titulocard {
 	font-size: 16px;
 	font-weight: 600;
 }
-.subtitulo {
+.subtitulocard {
 	font-size: 12px;
 	font-weight: 600;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 
-.title {
+.tituloprincipal {
 text-align: center;
 text-transform: uppercase;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

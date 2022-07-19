@@ -10,8 +10,8 @@ export const cargarPersonajes = async(pagina) => {
 				personajes += `
 					<div class="card">
 						<img class="poster" src="${personaje.image}">
-						<h3 class="titulo">${personaje.name}</h3>
-                        <h4 class="subtitulo">${personaje.species} - ${personaje.gender}</h4>
+						<h3 class="titulocard">${personaje.name}</h3>
+                        <h4 class="subtitulocard">${personaje.species} - ${personaje.gender}</h4>
 					</div>`;
 			});
 			document.getElementById('contenedor').innerHTML = personajes;
