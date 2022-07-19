@@ -1,23 +1,24 @@
 import{cargarPersonajes} from './personajes.js'
-let pagina = 1;
 
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
+const tituloPagina = document.getElementById('tituloPagina');
+
+let pagina = 1;
 
 btnSiguiente.addEventListener('click', () => {
-	if(pagina < 43){
+	if(pagina < 42){
 		pagina += 1;
-		cargarPersonajes();
+		tituloPagina.textContent = "Página " + pagina
+		cargarPersonajes(pagina);
 	}
 });
 
 btnAnterior.addEventListener('click', () => {
 	if(pagina > 1){
 		pagina -= 1;
-		cargarPersonajes();
+		tituloPagina.textContent = "Página " + pagina
+		cargarPersonajes(pagina);
 	}
 });
 
-
-
-cargarPersonajes();

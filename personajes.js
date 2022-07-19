@@ -1,11 +1,10 @@
-let pagina = 1;
-export const cargarPersonajes = async() => {
+export const cargarPersonajes = async(pagina) => {	
 	try {
 		const respuesta =await axios(`https://rickandmortyapi.com/api/character/?page=${pagina}`);	
         const datos = await respuesta.data.results;
 		console.log(datos)
 
-		if(respuesta.status === 200){			
+		if(respuesta.status == 200){			
 			let personajes = '';
 			datos.forEach(personaje => {
 				personajes += `
@@ -19,8 +18,8 @@ export const cargarPersonajes = async() => {
 
 			document.getElementById('contenedor').innerHTML = personajes;
 
-		} else if(respuesta.status === 404){
-			console.log('La pelicula que buscas no existe');
+		} else if(respuesta.status == 404){
+			console.log('La página que busca no existe');
 		} else {
 			console.log('Error y no se que pasa');
 		}
@@ -30,4 +29,5 @@ export const cargarPersonajes = async() => {
 	}
 
 }
+cargarPersonajes();
 
