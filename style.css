@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+    max-width: 1000px;    
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 40px;
+    
+}
+
+
+.titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+.subtitulo {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+.card {
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #39e46c;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+
+.title {
+text-align: center;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding-top: 25px;
+}
