@@ -2,6 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/16197568/179870535-0cc48c5d-35d4-4bd9-8728-8df2c123a655.png)
 
+### Enlace de CSS de los botones Anterior y Siguiente
+https://freefrontend.com/css-buttons/
+
 ## Author
 
 <blockquote>
