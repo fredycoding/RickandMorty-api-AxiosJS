@@ -1,4 +1,4 @@
-import{cargarPersonajes} from './personajes.js'
+import{cargarPersonajes, paginasdelaapi} from './personajes.js'
 
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
@@ -7,7 +7,7 @@ const tituloPagina = document.getElementById('tituloPagina');
 let pagina = 1;
 
 btnSiguiente.addEventListener('click', () => {
-	if(pagina < 42){
+	if(pagina < paginasdelaapi){
 		pagina += 1;
 		tituloPagina.textContent = "Página " + pagina
 		cargarPersonajes(pagina);
@@ -22,3 +22,4 @@ btnAnterior.addEventListener('click', () => {
 	}
 });
 
+cargarPersonajes()
