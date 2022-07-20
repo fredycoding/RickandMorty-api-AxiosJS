@@ -1,27 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	background: #ebdef6;
-	color: #1d1d1d;
-
+body {	
+	font-family: Arial, Helvetica, sans-serif;	
+	color: #1d1d1d;	
+	background: linear-gradient(to right, #421d4d, #aa00ff);
 }
 
-.contenedor {
-	
+.contenedor {	
 	margin: 30px auto 80px auto;	
 	width: 1280px;	   
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 30px;	
-
-    
+	gap: 30px;	    
 }
-
 
 .titulocard {
 	font-size: 16px;
@@ -41,26 +37,29 @@ body {
     border-radius: 30px;
     text-align: center;	
 	border-width: 10px;
-	border-color: #c88dff;
-	
+	border-color: #c88dff;	
 }
 
 .paginacion {
 	position: fixed;
-	bottom: 0;
-	background: #a0a3fc;
+	bottom: 0;	
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	gap: 20px;
 	padding: 10px;
+	background: linear-gradient(to left, #e8d9b8, #ecce8e);
 }
-
 
 .tituloprincipal {
 text-align: center;
 text-transform: uppercase;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Oswald', sans-serif;
 padding-top: 25px;
+color: rgb(255, 255, 255);
+}
+#tituloPagina{
+	color: rgb(255, 255, 255);
+	font-family: 'Oswald', sans-serif;
 }
 
